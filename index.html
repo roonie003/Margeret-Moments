@@ -1,9 +1,4 @@
-<?php
-include 'db.php';
-$result = mysqli_query($link,"SELECT * FROM mm_content");
 
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,16 +16,10 @@ $result = mysqli_query($link,"SELECT * FROM mm_content");
     <img src="/images/coffeecup.jpeg" class="logo" />
 
     <div>
-        </ <?php
-        $i=0;
-        while($row = mysqli_fetch_array($result)){
-            ?> <h1><?php echo $row["text"]; ?></h1>
-
-        <?php
-            $i++;
-        }
-        ?>
-
+        <h1>Hang tight something is brewing...</h1>
+        <h3>Stay Connected:</h3>
+        <a href="https://www.instagram.com/margaret_mornings/" target="_blank"><i class="fab fa-instagram fa"></i></a>
+<a href="mailto:moments@margaretmoments.co.za" target="_blank"><i class="fas fa-envelope fa"></i></a>
 
     </div>
 </body>
